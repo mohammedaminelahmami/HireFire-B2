@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: linear-gradient(to right, white 50%, rgb(32, 32, 32) 50%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.loadergif {
+  
+  position: absolute;
+  z-index: 9999999;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  timing
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+.container {
+  width: 85%;
+  height: 85%;
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: black;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  box-shadow: 1px 1px 4px rgb(250 250 252), 2px 3px 1px rgb(0 0 0),
+    3px 4px 1px rgb(250 252 250);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  margin-right: 2%;
+  list-style: none;
+}
+.menu ul li a {
+  padding: 0 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.menu ul li a:hover {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  text-shadow: 0px 0px 0 rgb(88, 88, 88), 1px 1px 0 rgb(250, 249, 249),
+    2px 2px 0 rgb(255, 255, 255), 3px 3px 0 rgb(252, 249, 249), 4px 4px 0 rgb(231, 229, 227),
+    5px 5px 0 rgb(82, 81, 81), 6px 6px 0 rgb(245, 245, 244);
+}
+
+.mainlogo {
+  width: 12%;
+  height: 70%;
+  margin: 20px 20px;
+}
+
+.signin-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  width: 5vw;
+  height: 5vh;
+  box-shadow: 1px 1px 1px rgb(250 250 252), 1px 1px 1px rgb(0 0 0),
+    1px 1px 1px rgb(250 252 250);
+}
+
+.signup-button {
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  width: 5vw;
+  height: 5vh;
+  box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+    1px 8px 10px rgb(0 0 0);
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  padding: 6% 7.5%;
+}
+
+p {
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  padding: 2% 8%;
+}
+.action-button {
+  display: flex;
+  padding: 2% 10%;
+  width: 50%;
+  height: 18%;
+  justify-content: space-evenly;
+}
+.bookingbutton {
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+    1px 8px 10px rgb(0 0 0);
+}
+.Gallerybutton {
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  width: 40%;
+  color: white;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px rgb(250 250 252), 1px 1px 1px rgb(0 0 0),
+    1px 1px 1px rgb(250 252 250);
+}
+.video-back {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 20%;
+}
+.video {
+  width: 70%;
+  height: 70%;
+  margin-left: 800px;
+}
+
+.service-image {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0% 5%;
+}
+
+.assistance-image1 {
+  width: 60%;
+  height: 60%;
+  border-radius: 60px;
+  display: flex;
+  box-shadow: 1px 1px 5px rgb(0 0 0), 1px 1px 3px rgb(255 255 255),
+    1px 8px 15px rgb(0 0 0);
+}
+
+.assistance-image2 {
+  width: 60%;
+  height: 60%;
+  border-radius: 60px;
+  display: flex;
+  box-shadow: 1px 1px 5px rgb(250 250 252), 1px 2px 10px rgb(0 0 0),
+    1px 1px 5px rgb(250 252 250);
+}
+.blackside {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 2% 8%;
+}
+.whiteside {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 2% 8%;
+}
+.white-H {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.dark-H {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0px;
+  width: 100%;
+}
+.about{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  /* width: 54vw; */
+  align-items: center;
+}
+.about h2{
+  font-size: 70px;
+  background: linear-gradient(90deg, #050505 50%, #FFF 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 80px 0px;
+  margin-top: 100px;
+  margin-right: 17.4px;
+}
+
+.about p{
+  font-size: 28px;
+  background: linear-gradient(90deg, #050505 49%, #FFF 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.footer {
+  width: 85%;
+  height: 8vh;
+  overflow: hidden;
+  border-radius: 40px 40px 0px 0px;
+  background-color: black;
+  position: relative;
+  bottom: 0%;
+  right: 35%;
+  transform: translate(50%, 50%);
+  box-shadow: 1px 1px 4px rgb(250 250 252), 2px 3px 1px rgb(0 0 0),
+    3px 4px 1px rgb(250 252 250);
+}
+.footer {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+.twitteryoutube{
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  justify-content: center;
+}
+.facebookinsta{
+  display: flex;
+  width: 40px;
+    height: 40px;
+}
+
+.lineicons {
+  align-items: center;
+  display: flex;
+  width: 15vw;
+  JUSTIFY-CONTENT: space-evenly;
+}
+h3{
+  font-weight: 400;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container{
+    height: 90%;
+  }
+  .video-back {
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+  .video {
+    width: 100vw;
+    height: 70%;
+    margin: -25% -38%;
+  }
+  h1{
+    font-size: 40px;
+    padding: 0% 17%;
+  }
+  p{
+    font-size: 10px;
+    padding: 0% 54px;
+  }
+  .bookingbutton {
+    
+    width: 25%;
+    height: 40%;
+    font-size: 10px;
+}
+.Gallerybutton{
+    width: 25%;
+    height: 40%;
+    font-size: 10px;
+}
+.action-button {
+  display: flex;
+  padding-right: 28%;
+  padding-top: 6%;
+  width: 100vw;
+  height: 20%;
+  justify-content: space-evenly;
+}
+.service-image{
+    width: 90%;
+    margin: 0% 12%;
+    height: 50vh;
+}
+.assistance-image1, .assistance-image2{
+  width: 50%;
+  height: 50%;
+}
+.dark-H, .white-H{
+  font-size: 65%;
+}
+.blackside,.whiteside{
+  font-size: 63%;
+}
+.about h2 {
+  font-size: 50px;
+  margin-left: 5%;
+}
+.about p{
+  font-size: 26px;
+}
+.twitteryoutube, .facebookinsta{
+  width: 28px;
+}
+.copyright{
+  font-size: 8px;
+}
+.footer{
+  width: 90%;
+  right: 40%;
+}
+}
+
+@media screen and (max-width: 780px) {
+  .about h2 {
+    font-size: 50px;
+    margin-left: 7%;
+  }
+  .about p{
+    font-size: 22px;
+    margin-left: 3%;
+  }
+  .footer{
+    width: 90%;
+    right: 40%;
+    border-radius: 30px 30px 0px 0px;
+    height: 10vh;
+  }
+  .twitteryoutube, .facebookinsta{
+    width: 25px;
+  }
+  .signin-button, .signup-button{
+    width: 18vw;
+  }
+}
+
+

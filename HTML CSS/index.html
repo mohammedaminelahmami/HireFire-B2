@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>HireFire</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- javascript link-->
+    <script src="script.js"></script>
+  </head>
+  <!-- body -->
+  <body onload="loader()">
+    <!-- loader  -->
+    <div class="loadergif">
+      <img src="image/loader.gif" alt="#" />
+    </div>
+    <!-- end loader -->
+    <!-- header-->
+    <header class="header" style="display: none">
+      <div class="container">
+        <nav>
+          <div class="menu">
+            <a href="index.html"
+              ><img src="image/WebSiteLogo.png" class="mainlogo" alt="#"
+            /></a>
+            <input type="checkbox" id="check" />
+            <label for="check" class="click-menu">
+              <img src="image/menu.png" alt="" />
+            </label>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="About.html">About</a></li>
+              <li>
+                <button
+                  onclick="document.location='Singin.html'"
+                  class="signin-button"
+                >
+                  Sign In
+                </button>
+              </li>
+              <li>
+                <button
+                  onclick="document.location='Singup.html'"
+                  class="signup-button"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <style>
+          #check {
+            display: none;
+          }
+          .click-menu img {
+            height: 3em;
+            display: none;
+          }
+          @media screen and (max-width: 600px) {
+            .menu {
+              padding: 40px;
+            }
+            ul {
+              position: absolute;
+              z-index: 9999;
+              flex-direction: column;
+              top: 100px;
+              left: -100%;
+              text-align: center;
+              background: #000;
+            }
+            ul li {
+              padding: 0;
+            }
+
+            #check:checked ~ ul {
+              left: 0;
+              width: 90vw;
+              height: 74vh;
+              padding: 20px 0px;
+            }
+            .click-menu img {
+              display: block;
+              width: 11vw;
+              height: 7vh;
+              box-shadow: 0px 0px 1px rgb(250 250 252), 0px 0px 1px rgb(0 0 0),
+                0px 0px 4px rgb(250 252 250);
+              border-radius: 50%;
+            }
+            .click-menu img:hover {
+              transform: rotateZ(-30deg);
+            }
+            .mainlogo {
+              width: 35%;
+              margin: 0px;
+            }
+          }
+        </style>
+
+        <div class="video-back">
+          <video
+            src="image/back-video.mp4"
+            class="video"
+            loop
+            muted
+            autoplay
+          ></video>
+        </div>
+        <div>
+          <h1>HireFire.</h1>
+          <p>
+            HireFire is a rental car agency a company<br />
+            that rents automobiles for a short period of time<br />
+            generally ranging from afew hours to a few weeks
+          </p>
+        </div>
+        <div class="action-button">
+          <button
+            onclick="document.location='Booking.html'"
+            class="bookingbutton"
+          >
+            Book Now
+          </button>
+          <!-- <a class="bookingbutton" href="Booking.html">Book Now</a> -->
+          <button
+            onclick="document.location='Gallery.html'"
+            class="Gallerybutton"
+          >
+            Explore Us
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end header-->
+    <section class="section" style="display: none">
+      <div class="service-image">
+        <div>
+          <div>
+            <img src="image/NOfee.png" class="assistance-image1" alt="#" />
+            <div class="description">
+              <h2 class="dark-H">No Underage Fee</h2>
+              <p class="blackside">
+                Rent any of our cars as long as<br />
+                you're 21 years old.<br />
+                never pay any extra fee.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="image/eazypay.png" class="assistance-image1" alt="#" />
+            <div class="description">
+              <h2 class="dark-H">Easy Payment</h2>
+              <p class="blackside">
+                All payments are processed<br />
+                instantly over a scure payment<br />
+                protocol.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="image/support.png" class="assistance-image2" alt="#" />
+            <div class="description">
+              <h2 class="white-H">24/7 Support</h2>
+              <p class="whiteside">
+                Call or text anytime to speak<br />
+                with the service team.<br />
+                we are always here for you.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="image/nopaper.png" class="assistance-image2" alt="#" />
+            <div class="description">
+              <h2 class="white-H">No More Paperwork</h2>
+              <p class="whiteside">
+                When you book with name<br />
+                your entire rental is handled.<br />
+                never wait again.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <h2>ABOUT US</h2>
+        <p>
+          HireFire lunched in 2021 with an ambitious vision: to make booking an
+          auto rental simple, fast and easy.<br />
+          We've continued to improve and invest in HireFire.com to help you save
+          time and money.<br />
+          We realized that finding the best deal on a car rental can be time
+          consuming and confusing.<br />
+          So we've worked with the top online travel agencies in the world, the
+          best car rental brokers, the most comprehensive car hire aggregators
+          and well-known car rental companies<br />
+          (as well as many lesser known rental car brands for you to discover)
+          to bring all the results to you in one search.<br />
+          All to provide you with The Perfect Car at the Best Price. We wish you
+          a safe and enjoyable trip,<br />
+          no matter where and when you plan to go.<br />
+          Thank you for your business, HireFire.com
+        </p>
+      </div>
+      <!-- <div><<img src="image/22.png" class="image1" alt="#" /></div> -->
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="lineicons">
+          <img src="image/twitterIcon.png" class="twitteryoutube" />
+          <img src="image/youtubeIcon.png" class="twitteryoutube" />
+        </div>
+        <div class="copyright">
+          <h3>Copyright © 2021 HireFire. All rights reserved.</h3>
+          <h3>Email : saidessalami0@gmail.com</h3>
+          <h3>Phone : +212645071218</h3>
+        </div>
+        <div class="lineicons">
+          <img src="image/facebookIcon.png" class="facebookinsta" />
+          <img src="image/instagram.png" class="facebookinsta" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

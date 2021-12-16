@@ -1,0 +1,470 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 20px;
+}
+
+nav{
+	display: flex;
+}
+
+.sect1{
+	background-color: black;
+	height: 110vh;
+}
+.sect2{
+	height: 69.2vh;
+}
+
+ul{
+	display: flex;
+	font-size: 20px;
+	color: white;
+	list-style: none;
+	font-family:Montserrat, sans-serif;
+	font-weight: 600;
+	align-items: center;
+}
+.cnt__of__menu {
+	display: flex;
+}
+a{
+	display: flex;
+	flex-direction: row;
+	color: white;
+	text-decoration: none;
+	padding: 0 20px;
+}
+a:hover{
+	color: black;
+	text-shadow: 0px 0px 0 rgb(88, 88, 88), 1px 1px 0 rgb(250, 249, 249),
+    2px 2px 0 rgb(255, 255, 255), 3px 3px 0 rgb(252, 249, 249), 4px 4px 0 rgb(231, 229, 227),
+    5px 5px 0 rgb(82, 81, 81), 6px 6px 0 rgb(245, 245, 244);
+}
+
+.signin{
+	background-color: black;
+	color: white;
+	font-size: 17px;
+	padding: 5px 5px 5px 5px;
+	font-family:Montserrat, sans-serif;
+	border-radius: 13px;
+}
+.signup{
+	background-color: white;
+	color: black;
+	font-size: 17px;
+	padding: 5px 5px 5px 5px;
+	font-family:Montserrat, sans-serif;
+	border-radius: 13px;
+}
+
+.car5{
+	width: 32.5vw;
+	border: 1px solid #5E5E5E;
+	border-radius: 13px;
+	box-shadow: 22.1vw 6.64vh #5e5e5e7a;
+	margin: 0;
+}
+.cnt__of__hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 60px;
+	gap: 20px;
+}
+.HireFire{
+	color: white;
+	font-family:Montserrat, sans-serif;
+	font-size: 65px;
+	font-weight: 700;
+	margin: 0;
+	padding-top: 75px;
+}
+
+.textsemibold{
+	color: white;
+	font-family:Montserrat, sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10rem;
+}
+
+.title2{
+	font-family:Montserrat, sans-serif;
+	font-size: 55px;
+	font-weight: 700;
+	text-align: center;
+	color: black;
+	margin: 2rem 0rem 4.5rem 0rem;
+}
+
+.icon{
+	width: 5.2vw;
+	margin: 0;
+}
+
+.title__bold{
+	font-family:Montserrat, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.ktaba{
+	text-align: center;
+	font-family:Montserrat, sans-serif;
+	font-size: 20px;
+	
+}
+.rect__parent{
+	display: flex;
+	width: 84vw;
+	padding: 10px 0;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	height: 7vh;
+	background-color: black;
+	border-radius: 40px 40px 0px 0px;
+}
+
+.phone__child{
+	text-align: center;
+	font-family:Montserrat, sans-serif;
+	font-size: 10px;
+	color: white;
+	}
+
+.sm__parent{
+	display: flex;
+	justify-content: space-between;
+	gap: 48px;
+	align-items: center;
+}
+.sm__parent img{
+	width: 40px;
+}
+ 
+.parent{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.child{
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.hamburger{
+	background-color: transparent;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	display: none;
+}
+.hamburger:focus{
+	outline: none;
+}
+
+@media(max-width:1440px){
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 50px;
+		font-weight: 700;
+		margin: 0;
+		margin-left: -1rem;
+		margin: top -2rem;
+		padding-top: 75px;
+	}
+	.sect1{
+		background-color: black;
+		height: 140vh;
+	}
+	.sect2{
+		height: 70vh;
+	}
+}
+@media(max-width:1024px){
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: -1rem;
+		margin-left: -1rem;
+		padding-top: 75px;
+	}
+	.car5{
+		width: 40vw;
+		border: 1px solid #5E5E5E;
+		border-radius: 13px;
+		box-shadow: 22vw 10vh #5e5e5e7a;
+		margin: 0;
+	}
+}
+@media(max-width:768px){
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 34px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: -4rem;
+		margin-left: -1rem;
+		padding-top: 75px;
+	}
+	.sect1{
+		background-color: black;
+		height: 110vh;
+	}
+	.sect2{
+		height: 60vh;
+	}
+	.icon{
+		width: 7vw;
+		margin: 0;
+	}
+	.title2{
+		font-size: 35px;
+	}
+}
+@media(max-width:672px){
+	.nav__ul{
+		display: none;
+		flex-direction: column;
+		width: 100%;
+	}
+	.nav__ul.show{
+		display: flex;
+		flex-direction: column;
+	}
+	.hamburger{
+		display: block;
+	}
+	.cnt__of__menu {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.menu__icon{
+		width: 50px;
+	}
+	.signin,.signup{
+		display: none;
+	}
+	.parent{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.textsemibold{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		text-align: center;
+		margin-top: 10rem;
+	}
+	.car5{
+		width: 50vw;
+		border: 1px solid #5E5E5E;
+		border-radius: 13px;
+		box-shadow: 10.1vw 16.1vh #5e5e5e7a;
+		margin: 0;
+	}
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: -1rem;
+		padding-top: 75px;
+	}
+	.P__HireFire{
+		margin: 0;
+		margin-bottom: -11rem;
+		margin-left: -9rem;
+	}
+	.title2{
+		font-family:Montserrat, sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+		color: black;
+		margin: 2rem 0rem 4.5rem 0rem;
+	}
+	.sect1{
+		background-color: black;
+		height: 120vh;
+	}
+	.sect2{
+		height: 60vh;
+	}
+}
+@media(max-width:632px){
+	.sect2{
+		height: 90vh;
+	}
+}
+@media(max-width:500px){
+	.textsemibold{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+		margin-top: 10rem;
+	}
+	.car5{
+		width: 50vw;
+		border: 1px solid #5E5E5E;
+		border-radius: 13px;
+		box-shadow: 10.1vw 16.1vh #5e5e5e7a;
+		margin: 0;
+	}
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0;
+		margin-top: -2rem;
+		padding-top: 75px;
+	}
+	.P__HireFire{
+		margin: 0;
+		margin-bottom: -11rem;
+		margin-left: -9rem;
+	}
+	.title2{
+		font-family:Montserrat, sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+		color: black;
+		margin: 2rem 0rem 4.5rem 0rem;
+	}
+	.sect1{
+		background-color: black;
+		height: 120vh;
+	}
+	.sect2{
+		height: 100vh;
+	}
+}
+@media(max-width:426px){
+	.textsemibold{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+		margin-top: 10rem;
+	}
+	.car5{
+		width: 60vw;
+		border: 1px solid #5E5E5E;
+		border-radius: 13px;
+		box-shadow: 10.1vw 12.1vh #5e5e5e7a;
+		margin: 0;
+	}
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0;
+		padding-top: 75px;
+	}
+	.P__HireFire{
+		margin: 0;
+		margin-bottom: -8rem;
+		margin-left: -9rem;
+	}
+	.title2{
+		font-family:Montserrat, sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+		color: black;
+		margin: 2rem 0rem 4.5rem 0rem;
+	}
+	.sect1{
+		background-color: black;
+		height: 100vh;
+	}
+	.sect2{
+		height: 130vh;
+	}
+	.sm__parent img{
+		width: 25px;
+	}
+	.sm__parent{
+		gap: 10px;
+	}
+	.icon{
+		width: 12vw;
+		margin: 0;
+	}
+}
+@media(max-width:375px){
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0;
+		margin-top: 1rem;
+		margin-left: -10px;
+		padding-top: 75px;
+	}
+	.car5{
+		width: 60vw;
+		border: 1px solid #5E5E5E;
+		border-radius: 13px;
+		box-shadow: 10.1vw 9.1vh #5e5e5e7a;
+		margin: 0;
+	}
+	.sect1{
+		background-color: black;
+		height: 100vh;
+	}
+	.sect2{
+		height: 120vh;
+	}
+}
+@media(max-width:320px){
+	.HireFire{
+		color: white;
+		font-family:Montserrat, sans-serif;
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0;
+		margin-left: -12px;
+		padding-top: 75px;
+	}
+	.car5{
+		width: 70vw;
+		border: 1px solid #5E5E5E;
+		border-radius: 13px;
+		box-shadow: 8.1vw 15vh #5e5e5e7a;
+		margin: 0;
+	}
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ABOUT</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="About.css">
+</head>
+<body>
+	<section class="sect1">
+		<header>
+			<img src="image/WebSiteLogo.png" alt="LOGO" width="80" class="LOGO">
+		<nav>
+			<div class="cnt__of__menu">
+				<button class="hamburger" id="hamburger">
+					<img src="image/menu.png" class="menu__icon">
+				</button>
+				<ul class="nav__ul" id="nav__ul">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="#">Event</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+				<button type="button" class = "signin">Sign in</button>
+				<button type="button" class = "signup">Sign Up</button>
+			</div>
+		</nav>
+		</header>
+			<div class="cnt__of__hero">
+				<img src="image/cars/car5.jpg" alt="car5" class="car5">
+				<div class="P__HireFire"><p class="HireFire"> ABOUT<br>HireFire. </p></div>
+			</div>
+		<p class="textsemibold">HireFire lunched in 2021 with an ambitious vision:<br> 
+			to make booking an auto rental simple,<br>
+			fast and easy.
+			</p>
+	</section>
+	<section class="sect2">
+		<p class="title2"> HireFire by the numbers </p>
+		<div class="parent">
+			<div class="child">
+				<img src="image/icons/8541772_car_transport_icon.svg" class="icon">
+				<p class="title__bold">Cars from $25/day</p>
+				<p class="ktaba">for any<br>budget & any<br> style</p>
+			</div>	
+			<div class="child">
+				<img src="image/icons/6843074_certified_insurance_protection_protective_safety_icon.svg" class="icon">
+				<p class="title__bold">Up to $750,000</p>
+				<p class="ktaba">in liability insurance under a<br>policy issued to Turo by<br>Travelers*</p>
+			</div>	
+			<div class="child">
+				<img src="image/icons/stars.svg" class="icon">
+				<p class="title__bold">$500 million</p>
+				<p class="ktaba">raised<br> to<br> date</p>
+			</div>
+	</section>
+	<footer class="rect__parent">
+		<div class="sm__parent">
+			<img src="image/twitterIcon.png" alt="twitter" class="sm__child1">
+			<img src="image/youtubeIcon.png" alt="youtube" class="sm__child1">
+		</div>	
+		<p class="phone__child">Phone : +212645071218<br>
+		   Email : saidessalami0@gmail.com<br>
+		   Copyright © 2021 HireFire. All rights reserved.
+		</p>
+		<div class="sm__parent">	
+			<img src="image/facebookIcon.png" alt="facebook" class="sm__child2">
+			<img src="image/instagram.png" alt="instagram" class="sm__child2">	
+		</div>
+	</footer>	
+	<script>
+		const hamburger = document.getElementById('hamburger');
+		const navUL = document.getElementById('nav__ul');
+
+		hamburger.addEventListener('click', () =>{
+		navUL.classList.toggle('show');
+});
+	</script>
+</body>
+</html>
